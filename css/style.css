@@ -389,3 +389,170 @@ span:hover {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.9), 0 10px 20px rgba(0, 0, 0, 0.7);
     transform: translateY(-2px);
 }
+
+/* ========================================
+   ESTILOS DE NAVEGACIÓN DE APARTADOS
+   ======================================== */
+
+/* Contenedor de navegación */
+.navegacion-apartados {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+/* Botones de apartados */
+.btn-apartado {
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Botón apartado activo */
+.btn-apartado.activo {
+    background-color: #4CAF50;
+    border-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    transform: translateY(-2px);
+}
+
+/* Efecto hover de botones de apartado */
+.btn-apartado:hover {
+    background-color: rgba(76, 175, 80, 0.3);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Apartados (secciones) */
+.apartado {
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+
+/* Apartado activo */
+.apartado.activo {
+    display: block;
+}
+
+/* Animación de aparición */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ========================================
+   ESTILOS DE LA CALCULADORA DE PORCENTAJE
+   ======================================== */
+
+/* Contenedor de la calculadora de porcentaje */
+.contenedor-calculadora-porcentaje {
+    margin-top: 30px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Entrada de porcentaje */
+.entrada-porcentaje {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 25px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Grupo individual de entrada */
+.grupo-entrada {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Etiquetas */
+.grupo-entrada label {
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Inputs de porcentaje */
+.input-porcentaje {
+    padding: 12px 20px;
+    font-size: 16px;
+    width: 150px;
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+/* Quitar las flechas de los inputs number */
+.input-porcentaje::-webkit-outer-spin-button,
+.input-porcentaje::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input-porcentaje[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Efecto focus de los inputs de porcentaje */
+.input-porcentaje:focus {
+    outline: none;
+    border-color: #FF9800;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Contenedor del resultado de porcentaje */
+.resultado-porcentaje-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Etiqueta del resultado */
+.label-resultado {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Resultado del porcentaje */
+.resultado-porcentaje {
+    padding: 15px 30px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #e8e8e8;
+    background-color: rgba(76, 175, 80, 0.2);
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6), 0 4px 8px rgba(0, 0, 0, 0.4);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
