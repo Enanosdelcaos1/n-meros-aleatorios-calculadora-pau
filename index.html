@@ -61,8 +61,59 @@
         </div>
     </section>
 
+    <!-- Nueva sección: Calculadora con números introducidos por el usuario -->
+    <section class="contenedor-calculadora-manual">
+        <h2>Calculadora Manual</h2>
+        
+        <div class="entrada-numeros">
+            <input type="number" id="inputNumero1" class="input-numero" placeholder="Número">
+            <input type="number" id="inputNumero2" class="input-numero" placeholder="Número">
+        </div>
+
+        <button id="btnCalcular" class="btn-calcular">Calcular</button>
+
+        <div class="fila-botones">
+            <!-- Operación SUMA -->
+            <section class="boton-grupo">
+                <span class="resultado-operacion" id="resultSumaManual">0</span>
+                <button class="btn-operacion">+</button>
+            </section>
+
+            <!-- Operación RESTA -->
+            <section class="boton-grupo">
+                <span class="resultado-operacion" id="resultRestaManual">0</span>
+                <button class="btn-operacion">-</button>
+            </section>
+
+            <!-- Operación MULTIPLICACIÓN -->
+            <section class="boton-grupo">
+                <span class="resultado-operacion" id="resultMultiplicacionManual">0</span>
+                <button class="btn-operacion">*</button>
+            </section>
+
+            <!-- Operación DIVISIÓN -->
+            <section class="boton-grupo">
+                <span class="resultado-operacion" id="resultDivisionManual">0</span>
+                <button class="btn-operacion">/</button>
+            </section>
+
+            <!-- Operación PORCENTAJE -->
+            <section class="boton-grupo">
+                <span class="resultado-operacion" id="resultPorcentajeManual">0</span>
+                <button class="btn-operacion">%</button>
+            </section>
+
+            <!-- Operación RAÍZ CUADRADA -->
+            <section class="boton-grupo">
+                <span class="resultado-operacion" id="resultRaizCuadradaManual">0</span>
+                <button class="btn-operacion">√</button>
+            </section>
+        </div>
+    </section>
+
     <!-- Script JavaScript: contiene toda la lógica de la calculadora -->
     <!-- La ruta "../js/calculadora.js" indica que el archivo está en la carpeta js/ -->
     <script src="js/calculadora.js"></script>
+    <script src="js/calculadora_manual.js"></script>
 </body>
 </html>
